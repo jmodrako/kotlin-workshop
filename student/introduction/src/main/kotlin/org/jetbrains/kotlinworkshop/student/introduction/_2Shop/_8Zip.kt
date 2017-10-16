@@ -9,5 +9,7 @@ fun main(args: Array<String>) {
 
 // Find the correspondence between customers and their names (as a list or pairs)
 fun Shop.zipNameAndCustomer(): List<Pair<String, Customer>> {
-    TODO()
+//    return this.customers.associateBy { it.name }.toList()
+    val names = this.customers.map { it.name }
+    return names.zip(this.customers)
 }
