@@ -10,7 +10,7 @@ fun iteratingOverCollection() {
 fun iteratingOverMap() {
     val map = mapOf(1 to "one", 2 to "two", 3 to "three")
 
-    for ((key, value) in map) {
+    for ((key, value) in map) { // deconstructing in loops since 1.1
         println("$key = $value")
     }
 }

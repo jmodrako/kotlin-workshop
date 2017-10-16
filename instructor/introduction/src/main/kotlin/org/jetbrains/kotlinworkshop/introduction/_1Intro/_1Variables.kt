@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     println("$question?")
 
     // mutable
-    var answer = 0
+    var answer: Int = 0
     answer = 42
     println(answer)
 

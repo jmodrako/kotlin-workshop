@@ -10,5 +10,5 @@ fun main(args: Array<String>) {
 
     val countryAndCityAndContinent = Triple("Spain", "Madrid", "Europe")
 
-
+    val (f, s, t) = countryAndCityAndContinent
 }

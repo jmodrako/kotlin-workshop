@@ -5,7 +5,7 @@ fun basicSyntax() {
 
     val sum1: (Int, Int) -> Int = { x, y -> x + y }
 
-    println(sum(1, 2)) // 3
+    println(sum1(1, 2)) // 3
 }
 
 fun shortSyntax() {

@@ -5,11 +5,10 @@ enum class Color {
     BLUE, ORANGE, RED
 }
 
-fun updateWeather(
-        celsiusDegrees: Double
-) {
+fun updateWeather(celsiusDegrees: Double) {
     val description: String
     val color: Color
+
     when {
         celsiusDegrees < 0 -> {
             description = "cold"
@@ -27,10 +26,9 @@ fun updateWeather(
 }
 
 fun updateWeather1(celsiusDegrees: Double) {
-    val (description, color) =
-            when {
-                celsiusDegrees < 0 -> Pair("cold", Color.BLUE)
-                celsiusDegrees in 0..15 -> "mild" to Color.ORANGE
-                else -> "hot" to Color.RED
-            }
+    val (description, color) = when {
+        celsiusDegrees < 0 -> Pair("cold", Color.BLUE)
+        celsiusDegrees in 0..15 -> "mild" to Color.ORANGE
+        else -> "hot" to Color.RED
+    }
 }

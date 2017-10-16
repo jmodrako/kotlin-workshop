@@ -15,3 +15,7 @@ fun test() {
 
 // Infix
 infix fun String.isEqual(value: String) = this == value
+
+fun test2() {
+    "test" isEqual "asd"
+}
